@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.comix.roundcornerimage.MainActivity"
+    >
+
+  <com.comix.rounded.RoundedCornerImageView
+      android:id="@+id/imageView1"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="16dp"
+      android:scaleType="fitXY"
+      app:cornerColor="@android:color/white"
+      app:cornerRadius="6dp"
+      />
+
+  <com.comix.rounded.RoundedCornerImageView
+      android:id="@+id/imageView2"
+      android:layout_width="160dp"
+      android:layout_height="60dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="16dp"
+      android:scaleType="centerCrop"
+      app:cornerColor="@android:color/white"
+      app:cornerRadius="10dp"
+      />
+
+
+  <com.comix.rounded.RoundedCornerImageView
+      android:id="@+id/imageView3"
+      android:layout_width="60dp"
+      android:layout_height="160dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="16dp"
+      android:scaleType="centerCrop"
+      app:cornerColor="@android:color/holo_blue_light"
+      app:cornerRadius="15dp"
+      />
+
+
+</LinearLayout>

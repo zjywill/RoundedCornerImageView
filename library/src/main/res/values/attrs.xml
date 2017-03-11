@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerColor" format="color" />
+        <attr name="cornerLeftDisable" format="boolean" />
+        <attr name="cornerTopDisable" format="boolean" />
+        <attr name="cornerRightDisable" format="boolean" />
+        <attr name="cornerBottomDisable" format="boolean" />
+    </declare-styleable>
+
+</resources>
