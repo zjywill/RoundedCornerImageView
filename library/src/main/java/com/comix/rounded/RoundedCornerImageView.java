@@ -9,10 +9,10 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+import android.widget.ImageView;
 
-public class RoundedCornerImageView extends AppCompatImageView {
+public class RoundedCornerImageView extends ImageView {
 
     private static int DEFAULT_CORNER_COLOR = Color.WHITE;
     private static int DEFAULT_CORNER_RADIUS = 6;
