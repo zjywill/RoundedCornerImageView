@@ -21,11 +21,16 @@
         />
 
     <com.comix.rounded.RoundedCornerImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageView1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
+        app:cornerBottomDisable="false"
+        app:cornerLeftDisable="false"
+        app:cornerRightDisable="false"
+        app:cornerTopDisable="false"
         app:cornerColor="@android:color/white"
         app:cornerRadius="6dp"
         />
