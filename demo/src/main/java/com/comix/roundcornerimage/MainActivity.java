@@ -1,20 +1,18 @@
 package com.comix.roundcornerimage;
 
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.comix.rounded.RoundedCornerImageView;
-import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String IMAGE
-        = "http://o.aolcdn.com/hss/storage/midas/8186eb6dbc7bef04d76df61eab52a98e/205033837/mission-iss01-ed.jpeg";
+        = "https://github.com/zjywill/RoundedCornerImageView/blob/master/SampleImage/sample1.jpg?raw=true";
     private static final String IMAGE_1
-        = "http://o.aolcdn.com/hss/storage/midas/8186eb6dbc7bef04d76df61eab52a98e/205033837/mission-iss01-ed.jpeg";
+        = "https://github.com/zjywill/RoundedCornerImageView/blob/master/SampleImage/sample2.jpeg?raw=true";
 
     RoundedCornerImageView imageView1;
     RoundedCornerImageView imageView2;
@@ -37,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this).load(IMAGE).centerCrop().into(imageView2);
         Glide.with(this).load(IMAGE).centerCrop().into(imageView3);
         Glide.with(this)
-            .load(IMAGE)
+            .load(IMAGE_1)
             .bitmapTransform(new RoundedCornersTransformation(this, 30, 6,RoundedCornersTransformation.CornerType.BOTTOM))
             .centerCrop()
             .into(imageView4);
         Glide.with(this)
-            .load(IMAGE)
+            .load(IMAGE_1)
             .centerCrop()
             .bitmapTransform(new RoundedCornersTransformation(this, 60, 6,RoundedCornersTransformation.CornerType.TOP))
             .into(imageView5);
