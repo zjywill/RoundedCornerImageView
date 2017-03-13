@@ -32,14 +32,15 @@ Gradle
 ```
 allprojects {
   repositories {
-    ...
-    maven { url 'https://jitpack.io' }
+        mavenCentral()
+      //or
+      //jcenter()
   }
 }
 ```
 
 ```
 dependencies {
-        compile 'com.github.zjywill:RoundedCornerImageView:1.1.0'
+        compile 'com.github.zjywill:roundedcornerimageview:1.1.0'
 }
 ```
